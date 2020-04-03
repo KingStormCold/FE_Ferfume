@@ -7,10 +7,62 @@
 html{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    color: #5a5a5a;
     background-color: #ffffff;
     text-rendering: optimizeLegibility;
 }
 body {
     overflow-x: hidden;
+}
+/* -------------------------------------- */
+/* -----------REUSEABLE COMPONENT-------- */
+/* -------------------------------------- */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------------- */
+/* ------------------HEADER-------------- */
+/* -------------------------------------- */
+.header-sticky {
+    position: relative;
+    background-color: #19213A;
+}
+.header-logo {
+    display: inline-block;
+}
+.header-logo img{
+    width: 70%;
+    height: 80px;
+}
+.header-menu {
+    display: inline-block;
+}
+.header-menu .nav-content li {
+    list-style: none;
+    margin-left: 200px;
+}
+.header-menu .nav-content li a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 30px;
+    padding: 3px 0;
+}
+
+.header-signin {
+    display: inline-block;
+}
+.header-signin .btn-header-signin {
+    width: 100px;
+    height: 40px;
+    color: #19213A;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #19213A;
 }
