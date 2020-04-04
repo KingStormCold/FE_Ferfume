@@ -38,6 +38,7 @@ body {
 }
 .header-menu {
     display: inline-block;
+    position: relative;
 }
 .header-menu .nav-content li {
     list-style: none;
@@ -46,16 +47,25 @@ body {
 .header-menu .nav-content li a {
     text-decoration: none;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 20px;
     float: left;
     margin-left: 30px;
     padding: 3px 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.header-menu .nav-content li a:hover,
+.header-menu .nav-content li a:active {
+    text-decoration: underline;
+    transition: all .7s;
+    transform: translateY(-5px);
 }
 
 .header-signin {
     display: inline-block;
+    position: absolute;
 }
-.header-signin .btn-header-signin {
+.header-signin .header-signin-btn {
     width: 100px;
     height: 40px;
     color: #19213A;
@@ -65,4 +75,51 @@ body {
     border-radius: 10px;
     background-color: white;
     border: 1px solid #19213A;
+    margin-left: 250px;
+    margin-top: 25px;
+}
+.header-signin .header-signin-btn:hover,
+.header-signin .header-signin-btn:active {
+    background-color: #19213A;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    
+}
+  
+.header-signin .header-search {
+    position: absolute;
+    width: 110%;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 30px;
+    border: 1px solid #19213A;
+    overflow: hidden;
+    font-size: 20px;
+}
+.header-signin .icon-search {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 190px;
+    cursor: pointer;
+}
+input[type=text] {
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: 0;
+}
+input[type=text]::placeholder {
+    font-size: 13px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+/* ------------------------------------------ */
+/* ---------------------PRELOAD-------------- */
+.preloader-active::after{
+    content: url('/UI_Ferfume/resource/img/logo.GIF');
+    display: none;
+    transition: 10s;
 }

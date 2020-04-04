@@ -6,26 +6,33 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resource/css/style.css">
         <link rel="stylesheet" href="vendors/css/simple-grid.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/UI_Ferfume/resource/img/logo.ico">
     </head>
     <body>
         <head>
             <div class ="header-sticky">
-                <div class="col-3 header-logo">
+                <div class="header-logo col-3">
                     <a href="index.html"><img src="resource/img/logo.GIF" alt="Logo Ami Perfume"></a>
                 </div>
-                <div class="header-menu col-6">
+                <div class="header-menu col-7">
                     <nav class="nav-content">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Category</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-signin">
-                    <input type="submit" class ="btn-header-signin" value="Sign in">
-                </div>
+                <form class ="col-2 header-signin">
+                    <input type="text" class="header-search" placeholder="Search products">
+                    <div class="search-icon">
+                        <i class="fa fa-search icon-search"></i>
+                    </div>
+                    <input type="submit" class ="header-signin-btn" value="Sign in" >
+                </form>
+
             </div>
             
             
