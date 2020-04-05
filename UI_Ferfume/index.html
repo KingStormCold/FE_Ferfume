@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resource/css/style.css">
         <link rel="stylesheet" href="vendors/css/simple-grid.css">
+        <link rel="stylesheet" href="vendors/css/animate.min.css">
         <link rel="shortcut icon" type="image/x-icon" href="/UI_Ferfume/resource/img/logo.ico">
     </head>
     <body>
@@ -30,13 +31,32 @@
                     <div class="search-icon">
                         <i class="fa fa-search icon-search"></i>
                     </div>
-                    <input type="submit" class ="header-signin-btn" value="Sign in" >
+                    <input type="submit" class ="header-signin-btn" value="Sign In" >
                 </form>
 
             </div>
-            
-            
         </head>
+        <main>
+            <div class="slider">
+                <div class="slider-active">
+                    <div class="row">
+                        <div class="col-5 slider-img" data-animation="bounceIn" data-delay=".4s">
+                            <img src="resource/img/slider_product.jpg" alt="slider">
+                        </div>
+                        <div class="col-7 slider-content">
+                            <span data-animation="fadeInRight">60% Discount</span>
+                            <h1 data-animation="fadeInRight">Perfume <br> Collection</h1>
+                            <p data-animation="fadeInRight">Best Ami's Perfume Collection By 2020!</p>
+                            <!-- Hero-btn -->
+                            <div class="silder-show-now">
+                                <a href="index.html" class="btn btn-show-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
         
         <script src="resource/js/script.js"></script>
         <!-- <script src="vendors/js/jquery.waypoints.min.js"></script> -->
