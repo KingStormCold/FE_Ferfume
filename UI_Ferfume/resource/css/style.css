@@ -122,8 +122,18 @@ input[type=text]::placeholder {
 
 /* ------------------------------------------ */
 /* ---------------------SLIDER--------------- */
-.slider-img {
-    display: inline-block;
+.slider {
+    background-image:  url('/UI_Ferfume/resource/img/background-slider.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 602px;
+}
+.slider-img img{
+    height: 600px;
+    display: block;
+    box-shadow: 0px 5px 15px 0px #19213A;
 }
 .slider-content{
     position: absolute;
@@ -175,6 +185,7 @@ input[type=text]::placeholder {
     position: absolute;
     opacity: 1;
     color: rgb(90, 86, 86);
+    font-weight: 500;
     margin-top: 32%;
 }
 
